@@ -1,0 +1,21 @@
+{
+  "manifest_version"    :  3
+
+, "name"                :  "AAA: Kill Opera Console Warning"
+, "version"             :  "1.1"
+
+, "devtools_page"       :  "devtools_page.html"
+
+, "content_scripts"     :
+[
+  {
+    "js"          :  [ "inject_into_devtools.js" ]
+  , "matches"     :  [ "<all_urls>" ]
+  , "run_at"      :   "document_start"
+  }
+]
+
+  // Same key as kgejglhpjiefppelpmljglcjbhoiplfn (ChromeVox)
+  // see : https://stackoverflow.com/questions/17042547/how-to-inject-javascript-into-chrome-devtools-itself/17044405#17044405
+, "key"                 :   "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDEGBi/oD7Yl/Y16w3+gee/95/EUpRZ2U6c+8orV5ei+3CRsBsoXI/DPGBauZ3rWQ47aQnfoG00sXigFdJA2NhNK9OgmRA2evnsRRbjYm2BG1twpaLsgQPPus3PyczbDCvhFu8k24wzFyEtxLrfxAGBseBPb9QrCz7B4k2QgxD/CwIDAQAB"
+}
